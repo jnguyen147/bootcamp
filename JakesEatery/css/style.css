@@ -117,6 +117,11 @@ footer a {
     margin: 0 1rem 3rem 1rem;
 }
 
+.bgimage {
+    display: none;
+    height: 400px;
+    background: url("../media/images/jakes-meals.jpg") repeat-x;
+}
 
 /* breakpoint chosen because around this width, the "soup" in "chicken tortilla soup" wraps to the next line. You may have chosen a different dimension and that's fine. Just have a reason for choosing your breakpoint! */
 
@@ -144,5 +149,8 @@ footer a {
         flex-basis: 30%;
         /* turn off mobile settings */
         margin: 0;
+    }
+    .bgimage {
+        display: visibility;
     }
 }
