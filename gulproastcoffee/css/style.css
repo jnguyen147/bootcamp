@@ -1,0 +1,182 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+
+body {
+    background-color: #FFFFFF;
+    font-family: "lato", Helvetica, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color:#082B59;
+    color:white;
+    margin: 0;
+    padding: 1rem;
+    border-bottom-style: solid;
+    border-color:#D98555;
+    border-width:8px;
+  }
+  
+  p {
+    padding: 0.5rem;
+  }
+  
+  nav {
+    margin: 0 auto;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  
+  .fa-solid {
+    margin-right: 0.5rem;
+  }
+  
+  /* Navigation States*/
+  nav a {
+    float: none;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-family: "lato", Helvetica, sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  nav a:hover {
+    /*background-color: #ddd;*/
+    background-image: linear-gradient(transparent, #ddd, #ddd);
+    color: black;
+    border-radius: 4px;
+  }
+  
+  nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  h1 {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  
+  .logo {
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2vw;
+    line-height:2;
+    max-width: 1280px;
+  }
+  
+  aside {
+    display: flex;
+    flex-direction: column;
+    background: #59331D;
+    width: auto;
+    height: 100%;
+    color: white;
+    line-height: 2;
+    font-family: "lato", Helvetica, sans-serif;
+    margin: 2vw;
+    border-radius: 16px;
+  }
+  
+  aside p {
+    padding: 0px 16px 0px 16px;
+    inline-size: auto;
+  }
+  
+  p a {
+    color:#59331D;
+  }
+  
+  p a:hover {
+    color:#B0653A;
+  }
+  
+  .button {
+    border: none;
+    background-color: #59331D;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3D2314;
+  }
+  
+  img.rcorners {
+    border-radius: 16px 16px 0px 0px;
+  }
+  
+  .fa-instagram, .fa-square-twitter, .fa-square-facebook {
+    color: white;
+    margin: 0.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .bottombeans {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .footermain {
+    background-color:#082B59;
+    color:white;
+    margin: none;
+    padding: 1.5rem;
+    border-top-style: solid;
+    border-color:#D98555;
+    border-width:8px;
+    text-align:center;
+  }
+  
+  /* Responsive Elements*/
+  @media only screen and (max-width: 1000px) {
+    section {
+      flex-direction: column;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+    aside {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    ul, li {
+      flex-direction: column;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
