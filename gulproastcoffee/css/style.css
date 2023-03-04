@@ -86,7 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #59331D;
-    width: auto;
+    width: 500px;
     height: 100%;
     color: white;
     line-height: 2;
@@ -125,7 +125,7 @@ body {
     background-color: #3D2314;
   }
   
-  img.rcorners {
+.rcorners {
     border-radius: 16px 16px 0px 0px;
   }
   
@@ -168,15 +168,24 @@ body {
       margin-bottom: 2rem;
       margin-left: auto;
       margin-right: auto;
-      width: 60%;
+      width: 308px;
       height: auto;
+    }
+    .bottombeans {
+      overflow: hidden;
+      height: 200px;
     }
   }
   
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
     ul, li {
       flex-direction: column;
       text-align: center;
       padding: 0.5rem;
+    }
+    .bottombeans {
+      overflow: hidden;
+      height: 200px;
+      width: fit-content;
     }
   }
