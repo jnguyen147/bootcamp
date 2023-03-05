@@ -4,6 +4,7 @@ https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/
 body {
     background-color: #FFFFFF;
     font-family: "lato", Helvetica, sans-serif;
+    margin: 0;
   }
   
   header {
@@ -18,20 +19,22 @@ body {
     border-width:8px;
   }
   
-  p {
-    padding: 0.5rem;
-  }
-  
   nav {
     margin: 0 auto;
   }
   
   ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style-type: none;
+    padding: 0;
   }
   
+  li {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
   .fa-solid {
     margin-right: 0.5rem;
   }
@@ -48,7 +51,7 @@ body {
   }
   
   nav a:hover {
-    /*background-color: #ddd;*/
+
     background-image: linear-gradient(transparent, #ddd, #ddd);
     color: black;
     border-radius: 4px;
@@ -62,7 +65,6 @@ body {
   h1 {
     font-family: "Poppins", Helvetica, sans-serif;
     font-size: 2rem;
-    margin: 0.5rem;
   }
   
   .logo {
@@ -72,34 +74,28 @@ body {
     padding: 1rem;
   }
   
-  section {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    margin: 0 auto;
-    padding: 2vw;
-    line-height:2;
-    max-width: 1280px;
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    padding: 1.25rem;
   }
   
-  aside {
-    display: flex;
-    flex-direction: column;
-    background: #59331D;
-    width: 500px;
-    height: 100%;
-    color: white;
-    line-height: 2;
-    font-family: "lato", Helvetica, sans-serif;
-    margin: 2vw;
-    border-radius: 16px;
+  .grid-item-1 p {
+    line-height: 2rem;
   }
-  
-  aside p {
-    padding: 0px 16px 0px 16px;
-    inline-size: auto;
+
+  .grid-item-3 {
+    justify-self: center;
   }
-  
+
+  .pourover {
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+  }
+
   p a {
     color:#59331D;
   }
@@ -113,20 +109,15 @@ body {
     background-color: #59331D;
     border-radius: 8px;
     color: white;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    margin: 0.5rem;
+    display: block;
     cursor: pointer;
   }
   
   .button:hover {
     background-color: #3D2314;
-  }
-  
-.rcorners {
-    border-radius: 16px 16px 0px 0px;
   }
   
   .fa-instagram, .fa-square-twitter, .fa-square-facebook {
@@ -137,7 +128,7 @@ body {
   
   .bottombeans {
     margin: 0;
-    padding: 0;
+    padding: 1rem 0 0 0;
     display: block;
     width: 100%;
     height: auto;
@@ -155,37 +146,36 @@ body {
   }
   
   /* Responsive Elements*/
-  @media only screen and (max-width: 1000px) {
-    section {
-      flex-direction: column;
-    }
-    .button {
-      display: flex;
-      justify-content: center;
-    }
-    aside {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      margin-left: auto;
-      margin-right: auto;
-      width: 308px;
-      height: auto;
-    }
-    .bottombeans {
-      overflow: hidden;
-      height: 200px;
-    }
+
+ /* Extra small devices (phones, 600px and down) */
+ /* @media only screen and (max-width: 600px) {..} */
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+  ul {
+    flex-direction: row;
   }
-  
-  @media only screen and (max-width: 600px) {
-    ul, li {
-      flex-direction: column;
-      text-align: center;
-      padding: 0.5rem;
-    }
-    .bottombeans {
-      overflow: hidden;
-      height: 200px;
-      width: fit-content;
-    }
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem 4rem 1rem 4rem;
   }
+  .grid-item-1 {
+    height: 100%;
+  }
+  .grid-item-2 {
+    grid-row: 2;
+    justify-self: left;
+  }
+  .grid-item-3 {
+    grid-row: 1 / span 2;
+    justify-self: end;
+    align-self: center;
+  }
+  .pouroverhori {
+    max-width: 100%;
+    height: auto;
+  }
+ }
