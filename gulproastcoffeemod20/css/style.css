@@ -1,0 +1,31 @@
+/* this style keeps the Gulp logo from taking over the whole page. Adjust if needed to size correctly for your page. */
+
+nav img,
+nav .img-fluid {
+  max-width: 150px;
+}
+
+.navbar,
+.card {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-color: #555;
+}
+
+
+/* nav img, nav .img-fluid {
+  max-width: auto;
+} */
+
+.accordion-body {
+  color: #212529;
+}
+
+.tab-content {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 .25rem .25rem;
+  margin-bottom: 2rem;
+}
