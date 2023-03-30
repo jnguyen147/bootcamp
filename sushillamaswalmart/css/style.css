@@ -1,27 +1,35 @@
 .nav-item {
-    margin: 0 .5rem; 
-  }
-  
-  .navbar {
-    box-shadow: 0 0.3rem 0.4rem rgba(0,0,0,0.2);
-  }
-  
-  #navbtn {
-    box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.2);
-  }
+  margin: 0 .5rem;
+}
 
-  #profpic {
-    object-fit: cover;
-  }
+.navbar {
+  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
+}
 
-  #blueadj {
-    background-color: #3271D5;
-  }
+#navbtn {
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+}
 
-  #drkblueadj {
-    background-color: #004f9a;
-  }
+#profpic {
+  object-fit: cover;
+}
 
-  #lgtblueadj {
-    background-color: #e6f1fc;
-  }
+/* color adjusted to match Walmart's Brand */
+#blueadj {
+  background-color: #3271D5;
+}
+
+/* color adjusted to match Walmart's Brand */
+#drkblueadj {
+  background-color: #004f9a;
+}
+
+/* color adjusted to match Walmart's Brand */
+#lgtblueadj {
+  background-color: #e6f1fc;
+}
+
+/* smaller size for the annotated notes */
+#annosz  {
+  font-size: 0.85rem;
+}
