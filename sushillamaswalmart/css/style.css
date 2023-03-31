@@ -18,6 +18,9 @@
 #blueadj {
   background-color: #3271D5;
 }
+#textwalblue {
+  color: #3271D5;
+}
 
 /* color adjusted to match Walmart's Brand */
 #drkblueadj {
@@ -32,4 +35,8 @@
 /* smaller size for the annotated notes */
 #annosz  {
   font-size: 0.85rem;
+}
+
+#annocolor {
+  background-color: #F5C34A;
 }

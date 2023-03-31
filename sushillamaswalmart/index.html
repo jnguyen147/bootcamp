@@ -79,10 +79,11 @@
     <!-- end header -->
 
     <!-- start Hero Image-->
-    <div class="container-fluid mt-5 p-0">
+    <div class="container-fluid mt-5 px-0 px-md-3">
         <div class="row mt-3">
             <figure class="figure">
-                <img src="media/images/temp_login.png" class="img-fluid rounded shadow-sm mb-1 px-0" alt="...">
+                <img src="media/images/screen_login.png" class="img-fluid rounded shadow-sm mb-1 px-0"
+                    alt="Walmart associate's screen displaying login fields for Employee ID and Employee Password.">
                 <figcaption class="figure-caption text-end px-3">Hi-fidelity mockup of the employee login screen.
                 </figcaption>
             </figure>
@@ -98,7 +99,8 @@
             <div class="col">
                 <img src="media/images/WalmartCustomerCareLogo.png" class="img-fluid mb-4" width="300" height="auto"
                     alt="Walmart Customer Care Project Logo">
-                <p class="text-muted"><em>Designing an intuitive interface that empowers and supports Walmart customer care associates.</em></p>
+                <p class="text-muted"><em>Designing an intuitive interface that empowers and supports Walmart customer
+                        care associates.</em></p>
             </div>
             <div class="col">
             </div>
@@ -170,7 +172,8 @@
         <div class="col my-5">
             <div class="row">
                 <figure class="figure">
-                    <img src="media/images/temp_dashboard.png" class="img-fluid rounded shadow mb-1 px-0" alt="...">
+                    <img src="media/images/screen_dashboard.png" class="img-fluid rounded shadow mb-1 px-0"
+                        alt="Walmart associate's screen displaying their dashboard with left side bar of main application menu and 3 large buttons for Return an Item, Exchange an Item, and Order Lookup.">
                     <figcaption class="figure-caption text-end">High-fidelity mockup of the employee dashboard, once
                         logged in.</figcaption>
                 </figure>
@@ -228,10 +231,10 @@
             <!-- mobile preview -->
             <div class="col">
                 <figure class="figure">
-                    <img src="media/images/temp_managerapproved.png"
-                        class="d-block img-fluid rounded shadow mb-1 mx-auto px-0" width="75%" alt="...">
-                    <figcaption class="figure-caption text-center">Hi-fidelity mockup of the mobile manager screen for
-                        refund approvals.</figcaption>
+                    <img src="media/images/screen_managerhome.png" class="img-fluid rounded shadow mb-1"
+                        alt="Hi-fidelity mockup of the mobile manager dashboard.">
+                    <figcaption class="figure-caption text-center">Hi-fidelity mockup of the mobile manager dashboard.
+                    </figcaption>
                 </figure>
             </div>
             <!-- text&images -->
@@ -246,17 +249,11 @@
                         transactions without visiting the customer service counter unless needed.</p>
                 </div>
                 <!-- images -->
-                <div class="row row-cols-1 row-cols-sm-2 px-0">
+                <div class="row py-0 px-5">
                     <div class="col">
                         <figure class="figure">
-                            <svg class="bd-placeholder-img figure-img img-fluid rounded bg-secondary bg-opacity-25"
-                                width="auto" height="200"></svg>
-                        </figure>
-                    </div>
-                    <div class="col">
-                        <figure class="figure">
-                            <svg class="bd-placeholder-img figure-img img-fluid rounded bg-secondary bg-opacity-25"
-                                width="auto" height="200"></svg>
+                            <img src="media/images/screen_managerapproval.png" class="img-fluid rounded shadow mb-1"
+                                alt="Cropped screen capture of the manager's approval card with employee and query details. Deny and Approve buttons at the bottom.">
                         </figure>
                     </div>
                 </div>
@@ -300,125 +297,192 @@
         <div class="my-5 invisible">...</div>
         <div class="my-5 invisible">...</div>
 
-        <!-- start row 8 DESKTOP SCREENS AND ANNOTATIONS-->
+        <!-- start row 8 DESIGN RATIONALE - DASHBOARD -->
         <div class="col my-5">
             <div class="row">
                 <figure class="figure">
-                    <svg class="bd-placeholder-img figure-img img-fluid rounded bg-secondary bg-opacity-25" width="1280"
-                        height="720"></svg>
-                    <figcaption class="figure-caption text-end">High-fidelity mockup of the employee dashboard, once
-                        logged in.</figcaption>
+                    <img src="media/images/anno_dash.png" class="img-fluid rounded shadow mb-1 px-0"
+                        alt="Annotated Walmart associate's screen displaying their dashboard with left side bar of main application menu and 3 large buttons for Return an Item, Exchange an Item, and Order Lookup.">
+                    <figcaption class="figure-caption text-end" id="annosz">High-fidelity mockup of the employee
+                        dashboard, once
+                        logged in.
+                    </figcaption>
                 </figure>
             </div>
-            <ol class="list-group list-group-numbered mb-5" id="annosz">
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
+            <h4>Design Rationale: <span id="textwalblue">Dashboard</span></h4>
+            <ol class="list-group mt-2 mb-5" id="annosz">
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">1</span>This
+                    side
+                    navigation panel was designed to be accessible
+                    through touch screen. Associates can navigate between the dashboard, search for products in the
+                    product catalog, see details of customer profiles, and access the company-wide knowledge base
+                    through the help desk.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2"
+                        id="annocolor">2</span>Notifications were added to the toolbar. This is where associates can
+                    check their “news feed” for store updates and alerts.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">3</span>The
+                    profile icon displays which associated is logged in. This will limit confusion when associates clock
+                    out and trade machines with teammates.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">4</span>These
+                    hot keys were designed to be large and easily accessible, as these are some of the most touched keys
+                    on the associate screens. We chose dark blue to create contrast and improve overall usability.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">5</span>These
+                    easily accessible buttons were included for associates to flag customers or ping managers. Based on
+                    our research, we found that associates wanted a way to quickly flag customers for inappropriate
+                    behavior or suspicious activity in an indiscreet way.</li>
             </ol>
-            <div class="row">
-                <figure class="figure">
-                    <svg class="bd-placeholder-img figure-img img-fluid rounded bg-secondary bg-opacity-25" width="1280"
-                        height="720"></svg>
-                    <figcaption class="figure-caption text-end">add caption</figcaption>
-                </figure>
-            </div>
-            <ol class="list-group list-group-numbered mb-5" id="annosz">
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
-            </ol>
-            <div class="row">
-                <h4>Design Rationale: Dashboard</h4>
-                <p class="text-muted">We designed the employee dashboard to be intuitive, accessible through touch
-                    screen, and aligned with current Walmart design guidelines. Within this dashboard, associates have
-                    access to any actions or information needed to be successful in their roles. Some key features of
-                    this redesign include large, accessible action buttons, access to the company-wide knowledge base
-                    and product catalog, a customer information database, and the ability to quickly and discreetly flag
-                    customers and call managers.
-                </p>
-            </div>
         </div>
         <!-- end row 8 -->
 
-        <!-- blank page spacing -->
         <div class="my-5 invisible">...</div>
         <hr>
         <div class="my-5 invisible">...</div>
 
-        <!-- start row 9 MOBILE SCREENS AND ANNOTATIONS-->
+        <!-- start row 9 DESIGN RATIONALE - RETURN DETAILS -->
         <div class="col my-5">
             <div class="row">
                 <figure class="figure">
-                    <svg class="bd-placeholder-img figure-img img-fluid rounded bg-secondary bg-opacity-25" width="1280"
-                        height="720"></svg>
-                    <figcaption class="figure-caption text-end">Hi-fidelity mockup of the mobile manager screen for
-                        refund approvals.
-                    </figcaption>
-                </figure>
-                <ol class="list-group list-group-numbered mb-5" id="annosz">
-                    <li class="list-group-item small mx-auto">Add annotation here.</li>
-                    <li class="list-group-item small mx-auto">Add annotation here.</li>
-                    <li class="list-group-item small mx-auto">Add annotation here.</li>
-                </ol>
-                <figure class="figure">
-                    <svg class="bd-placeholder-img figure-img img-fluid rounded bg-secondary bg-opacity-25" width="1280"
-                        height="720"></svg>
-                    <figcaption class="figure-caption text-end">Hi-fidelity mockup of the mobile manager screen for
-                        refund approvals.
+                    <img src="media/images/anno_return.png" class="img-fluid rounded shadow mb-1 px-0"
+                        alt="Annotated Walmart associate's screen focused on customer's return details and option to specify quantity and reason for return per item.">
+                    <figcaption class="figure-caption text-end" id="annosz">Hi-fidelity mockup of the return details
+                        page.
                     </figcaption>
                 </figure>
             </div>
-            <ol class="list-group list-group-numbered mb-5" id="annosz">
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
-                <li class="list-group-item small mx-auto">Add annotation here.</li>
+            <h4>Design Rationale: <span id="textwalblue">Return Details</span></h4>
+            <ol class="list-group mt-2 mb-5" id="annosz">
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2"
+                        id="annocolor">1</span>Associates can
+                    adjust the quantity if users purchased more than one, and can adjust to zero to remove from the
+                    list.
+                </li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2"
+                        id="annocolor">2</span>Through our
+                    research, many users said they wanted a place to make notes about a return transaction. When
+                    clicked, a modal will pop up with an option to include information. The note will then be saved in
+                    the customer profile under this transaction.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">3</span>The
+                    total refund
+                    amount is indicated at the bottom right corner, based on the items scanned in. This gives associates
+                    the opportunity to share how much customers will be getting back through their return.</li>
             </ol>
-            <div class="row">
-                <h4>Design Rationale: Return Details</h4>
-                <p class="text-muted">To expedite the return approval process, we designed a series of mobile screens
-                    that represent the manager notification part of the user flow. If a return exceeds the $500 limit,
-                    all managers, assistant managers, and relevant department heads are notified and can easily approve
-                    or deny from their mobile device. This allows managers to quick-approve transactions without
-                    visiting the customer service counter unless needed.
-                </p>
-
-            </div>
         </div>
         <!-- end row 9 -->
+
+        <div class="my-5 invisible">...</div>
+        <hr>
+        <div class="my-5 invisible">...</div>
+
+        <!-- start row 10 DESIGN RATIONALE - REFUND DETAILS -->
+        <div class="col my-5">
+            <div class="row">
+                <figure class="figure">
+                    <img src="media/images/anno_refund.png" class="img-fluid rounded shadow mb-1 px-0"
+                        alt="Annotated Walmart associate's screen focused on customer's refund details and options to choose which payment method they want their refund to go to.">
+                    <figcaption class="figure-caption text-end" id="annosz">Hi-fidelity mockup of the refund details
+                        page.
+                    </figcaption>
+                </figure>
+            </div>
+            <h4>Design Rationale: <span id="textwalblue">Refund Details</span></h4>
+            <ol class="list-group mt-2 mb-5" id="annosz">
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">1</span>The
+                    options
+                    available for payment refund are determined by how the customer originally paid. The methods that
+                    are unavailable in a specific transaction will be inactive buttons to limit user error and
+                    confusion. The methods listed here align with Walmart's current offerings.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">2</span>Total
+                    refund amount
+                    is restated on this screen so associates can communicate the refund amount to customers.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">3</span>The
+                    customer's
+                    payment information will populate here so associates can ask if they'd like it back through the same
+                    payment method or card on file. This information also dictates what refund options appear in the box
+                    at right.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">4</span>The
+                    'confirm'
+                    button will remain inactive until the associate has selected the refund method. This will limit the
+                    possibility of user error when selecting a method.</li>
+            </ol>
+        </div>
+        <!-- end row 10 -->
+
+        <div class="my-5 invisible">...</div>
+        <hr>
+        <div class="my-5 invisible">...</div>
+
+        <!-- start row 11 DESIGN RATIONALE - MOBILE APPROVAL -->
+        <div class="col my-5">
+            <div class="row">
+                <figure class="figure">
+                    <img src="media/images/anno_manager.png" class="d-block img-fluid rounded shadow mb-1 mx-auto px-0"
+                        width="40%"
+                        alt="Annotated Walmart Manager's mobile screen of app displaying the approval in progress card with all relevant order details and buttons for deny and approve.">
+                    <figcaption class="figure-caption text-center" id="annosz">Hi-fidelity mockup of the mobile manager
+                        screen for
+                        refund approvals.
+                    </figcaption>
+                </figure>
+            </div>
+            <h4>Design Rationale: <span id="textwalblue">Mobile Approval for Managers</span></h4>
+            <ol class="list-group mt-2 mb-5" id="annosz">
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">1</span>The
+                    reason for
+                    return is the first thing managers see when they open a request, followed by the associate name,
+                    time, and date for documentation purposes. They can also see the purchase condition of the item and
+                    the item name and number, so they can confirm the return eligibility.</li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2" id="annocolor">2</span>The
+                    total refund
+                    amount is bolded at the bottom so it's the last thing managers see as they're making their decision
+                </li>
+                <li class="list-group-item"><span class="badge text-dark rounded-pill me-2"
+                        id="annocolor">3</span>Approve and deny
+                    buttons live at the bottom of the page for easy access. We chose to use Walmart's red and green
+                    colors from their design system since they most notably correlated with 'yes' and 'no.' If a manger
+                    clicks deny, they will be prompted to visit the customer service counter to explain the decision to
+                    the customer.</li>
+            </ol>
+        </div>
+        <!-- end row 11 -->
 
         <!-- blank page spacing -->
         <div class="my-5 invisible">...</div>
         <div class="my-5 invisible">...</div>
+        <div class="my-3 invisible">...</div>
 
     </div>
     <!-- end main container-->
 
     <!-- start blue section -->
-    <!-- start row 10 Takeaways and Next Steps-->
+    <!-- start row 12 Takeaways and Next Steps-->
     <div class="container-fluid py-5" id="blueadj">
-        <div class="container mt-5 py-5 px-3 px-lg-5">
+        <div class="container py-5 px-3 px-lg-5">
             <div class="col my-5">
                 <div class="row">
                     <figure class="figure">
-                        <svg class="bd-placeholder-img figure-img img-fluid rounded bg-light bg-opacity-50" width="1280"
-                            height="720"></svg>
-                        <figcaption class="figure-caption text-end text-light">A caption for the above image.
-                        </figcaption>
+                        <img src="media/images/WalmartCustomerCareLogo_darkmode.png" class="img-fluid mb-4" width="300"
+                            height="auto" alt="Walmart Customer Care Project Logo">
                     </figure>
                 </div>
+                <div class="my-2 invisible">...</div>
+                <img src="media/images/sushillama.png" alt="Sushi Llamas Icon"></a>
                 <div class="row">
-                    <h3 class="text-warning"><strong>our takeaways and next steps</strong></h3>
-                    <p class="text-light">Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-                        molestie,
-                        dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
-                        lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-                        lectus.
+                    <h3 class="text-warning"><strong>what's next?</strong></h3>
+                    <p class="text-light">Our next step would be to run another round of usability testing on our
+                        high-fidelity prototype and continue to iterate based on feedback.
+                    </p>
+                    <p class="text-light">After a final round of testing, we would refine our pitch presentation and
+                        schedule time to meet with stakeholders.
+                    </p>
+                    <p class="text-light">We are excited about the potential opportunity to present our solution to the
+                        UX team at Walmart, and are grateful to have collaborated successfully on another project as a
+                        team.
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end row 10 -->
+    <!-- end row 12 -->
     <!-- end blue section -->
 
     <!-- blank page spacing -->
